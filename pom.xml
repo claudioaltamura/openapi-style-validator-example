@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.claudioaltamura</groupId>
+	<artifactId>openapi-style-validator-example</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>openapi-style-validator-example</name>
+	
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<finalName>app</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.openapitools.openapistylevalidator</groupId>
+				<artifactId>openapi-style-validator-maven-plugin</artifactId>
+                <version>1.11</version>
+				<configuration>
+					<inputFile>petstore-expanded.json</inputFile>
+                    <validateInfoLicense>true</validateInfoLicense>
+                    <validateInfoDescription>true</validateInfoDescription>
+                    <validateInfoContact>true</validateInfoContact>
+                    <validateOperationOperationId>true</validateOperationOperationId>
+                    <validateOperationDescription>true</validateOperationDescription>
+                    <validateOperationTag>true</validateOperationTag>
+                    <validateOperationSummary>true</validateOperationSummary>
+                    <validateModelPropertiesExample>true</validateModelPropertiesExample>
+                    <validateModelPropertiesDescription>true</validateModelPropertiesDescription>
+                    <validateModelRequiredProperties>true</validateModelRequiredProperties>
+                    <validateModelNoLocalDef>false</validateModelNoLocalDef>
+                    <validateNaming>true</validateNaming>
+                    <ignoreHeaderXNaming>false</ignoreHeaderXNaming>
+                    <pathNamingConvention>HyphenCase</pathNamingConvention>
+                    <headerNamingConvention>UnderscoreUpperCase</headerNamingConvention>
+                    <parameterNamingConvention>CamelCase</parameterNamingConvention>
+                    <propertyNamingConvention>CamelCase</propertyNamingConvention>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
