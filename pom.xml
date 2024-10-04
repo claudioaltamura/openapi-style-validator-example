@@ -34,7 +34,7 @@
                     <validateNaming>true</validateNaming>
                     <ignoreHeaderXNaming>false</ignoreHeaderXNaming>
                     <pathNamingConvention>HyphenCase</pathNamingConvention>
-                    <headerNamingConvention>UnderscoreUpperCase</headerNamingConvention>
+                    <headerNamingConvention>HyphenUpperCase</headerNamingConvention>
                     <parameterNamingConvention>CamelCase</parameterNamingConvention>
                     <propertyNamingConvention>CamelCase</propertyNamingConvention>
 				</configuration>
